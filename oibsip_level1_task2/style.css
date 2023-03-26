@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 30px;
+}
+nav div{
+    margin-right: 800px;
+}
+nav li a {
+    text-decoration: none;
+    /* color: #333; */
+    color: #ffffff;
+    font-weight: 800;
+    padding: 20px;
+}
+.resume {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px;
+}
+/* Hero Styles */
+
+#img{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* About Styles */
+
+.about {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Project Styles */
+.projects {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.projects h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Contact Styles */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    /* background-color: red; */
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+footer p img{
+    margin-right: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    nav div{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    header {
+        padding: 5px;
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+
+    .hero h1 {
+        margin-top: 200px;
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .projects h2 {
+        font-size: 28px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact form {
+        max-width: 400px;
+    }
+
+    .contact input{
+        text-align: center
+        ;
+    }
+    .contact textarea {
+        font-size: 16px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+}
