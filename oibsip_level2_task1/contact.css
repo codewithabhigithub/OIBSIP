@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav div{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    header {
+        padding: 5px;
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+
+    .hero h1 {
+        margin-top: 200px;
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .projects h2 {
+        font-size: 28px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact form {
+        max-width: 400px;
+    }
+
+    .contact input{
+        text-align: center
+        ;
+    }
+    .contact textarea {
+        font-size: 16px;
+    }
+}
