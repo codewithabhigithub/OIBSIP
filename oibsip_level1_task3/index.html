@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="converter">
+    <h2 class="title">Temperature Converter</h2>
+    <table>
+      <tr>
+        <td>
+          <h2 class="name">Degree</h2>
+        </td>
+        <td></td>
+        <td>
+          <h2 class="name">Type</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="email" id="input" class="input" />
+        </td>
+        <td></td>
+        <td>
+          <select class="form-select" id="temperature">
+            <option value="F">Fahrenheit</option>
+            <option value="C">Celsius</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 class="name">Result</h2>
+        </td>
+      </tr>
+    </table>
+    <input type="text" id="output" class="result" />
+
+    <div class="d-grid">
+      <button type="button" ; onclick="myFunction()">Convert</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
